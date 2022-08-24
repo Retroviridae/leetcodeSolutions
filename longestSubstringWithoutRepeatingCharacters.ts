@@ -32,3 +32,22 @@ var lengthOfLongestSubstring = function(s) {
     // If not in the object, save it as key with index as value
     // If cursum is higher than max, update max
 // Return maxsum
+
+// var lengthOfLongestSubstring = function(s) {
+//     let obj = {};
+//     let curSum = 0;
+//     let maxSum = 0;
+//     for(let i = 0; i < s.length; i++){
+//         let c = s[i];
+//         if(c in obj){
+//             i = obj[c]
+//             obj = {};
+//             curSum = 0;
+//         }else{
+//             obj[c]=i;
+//             curSum ++
+//         }
+//         maxSum = Math.max(curSum, maxSum);
+//     }
+//     return maxSum;
+// };
