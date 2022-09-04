@@ -47,3 +47,27 @@ floodFill(image,1,1,2)
     // Set pixel to new color
     // Call helper function on all adjacent pixels
 // Return the image in the original function
+
+
+// const floodFill = function(image, sr, sc, newColor) {
+//     if (newColor === image[sr][sc]) return image;
+//     fill(image, sr, sc, image[sr][sc], newColor);
+//     return image;
+// };
+
+// function fill(image, sr, sc, color, newColor) { 
+//     if (
+//         sr < 0 || 
+//         sc < 0 || 
+//         sr >= image.length || 
+//         sc >= image[sr].length || 
+//         image[sr][sc] !== color
+//     ) {
+//         return;
+//     }
+//     image[sr][sc] = newColor;
+//     fill(image, sr-1, sc, color, newColor)
+//     fill(image, sr+1, sc, color, newColor)
+//     fill(image, sr, sc-1, color, newColor)
+//     fill(image, sr, sc+1, color, newColor)
+// }
