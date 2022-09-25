@@ -51,13 +51,8 @@ var solution2 = function(isBadVersion) {
         let r = n;
         let middle = Math.floor(n/2);
         while(l<=r){
-            if(isBadVersion(middle)){
-                r = middle - 1;
-            }else{
-                l = middle + 1;
-            }
-            let difference = Math.floor((r-l)/2);
-            middle = l + difference;
+            if(isBadVersion(middle)) r = middle - 1;
+            else l = middle + 1;
         }
         return middle + 1
     };
